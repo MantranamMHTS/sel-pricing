@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill-Uplift Training Programme — Pricing</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#203162;--blue:#2b44a3;--teal:#19a28d;--green:#66cc00;
+  --orange:#ff9d42;--blush:#fdf4fb;--black:#050301;
+  --mid:#f4f6fb;--border:#dde2ef;--muted:#7a84a0;
+}
+body{font-family:'Nunito Sans',sans-serif;background:var(--blush);color:var(--black);min-height:100vh;font-size:15px;line-height:1.6}
+.hdr{background:var(--navy);padding:1.4rem 2rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 16px rgba(32,49,98,.18)}
+.hdr-brand{font-family:'League Spartan',sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:.01em}
+.hdr-sub{font-size:12px;color:rgba(255,255,255,.5);margin-top:2px;font-weight:500}
+.hdr-pill{background:var(--teal);color:#fff;font-family:'League Spartan',sans-serif;font-size:12px;font-weight:700;padding:4px 14px;border-radius:999px;letter-spacing:.04em}
+.wrap{max-width:920px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.sec-label{font-family:'League Spartan',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin:2rem 0 .75rem;display:flex;align-items:center;gap:8px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.step-badge{width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-family:'League Spartan',sans-serif;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.25rem 1.4rem;margin-bottom:1rem;box-shadow:0 1px 6px rgba(32,49,98,.06)}
+.grade-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:1rem}
+.grade-lbl{font-size:13px;font-weight:600;color:var(--muted);min-width:52px}
+.gb{font-family:'League Spartan',sans-serif;font-size:12px;font-weight:600;padding:5px 14px;border-radius:8px;border:1.5px solid var(--border);background:#fff;color:var(--muted);cursor:pointer;transition:all .15s}
+.gb.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.gb:hover:not(.on){background:var(--mid);border-color:var(--blue)}
+.slider-row{display:flex;align-items:center;gap:12px;margin-bottom:.5rem}
+.slider-row label{font-size:13px;color:var(--muted);min-width:200px;font-weight:500}
+.slider-row input[type=range]{flex:1;accent-color:var(--blue)}
+.slider-val{font-size:13px;font-weight:700;color:var(--navy);min-width:110px;text-align:right}
+/* Module grid */
+.mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1rem}
+@media(max-width:700px){.mod-grid{grid-template-columns:1fr}}
+.mod-block{border-radius:12px;border:2px solid var(--border);overflow:hidden;background:#fff}
+.mod-block.m1{border-color:rgba(43,68,163,.25)}
+.mod-block.m2{border-color:rgba(25,162,141,.25)}
+.mod-block.m3{border-color:rgba(102,204,0,.25)}
+.mod-hdr{padding:10px 13px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none}
+.mod-block.m1 .mod-hdr{background:rgba(43,68,163,.08)}
+.mod-block.m2 .mod-hdr{background:rgba(25,162,141,.08)}
+.mod-block.m3 .mod-hdr{background:rgba(102,204,0,.08)}
+.mod-title{font-family:'League Spartan',sans-serif;font-size:12px;font-weight:700}
+.mod-block.m1 .mod-title{color:var(--blue)}
+.mod-block.m2 .mod-title{color:var(--teal)}
+.mod-block.m3 .mod-title{color:#44a300}
+.mod-days-badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px}
+.mod-block.m1 .mod-days-badge{background:rgba(43,68,163,.1);color:var(--blue)}
+.mod-block.m2 .mod-days-badge{background:rgba(25,162,141,.1);color:var(--teal)}
+.mod-block.m3 .mod-days-badge{background:rgba(102,204,0,.15);color:#44a300}
+.mod-body{padding:8px 10px 10px}
+.skill-group{margin-bottom:8px}.skill-group:last-child{margin-bottom:0}
+.skill-lbl{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px 2px}
+.sel-all-row{display:flex;align-items:center;gap:7px;padding:5px 6px 8px;margin-bottom:4px;border-bottom:1px solid var(--border);cursor:pointer}
+.sel-all-row span{font-size:11px;color:var(--muted);font-weight:600}
+.sub-item{display:flex;align-items:center;gap:8px;padding:6px 7px;border-radius:8px;cursor:pointer;transition:background .15s;margin-bottom:2px}
+.sub-item:hover{background:var(--mid)}
+.chk{width:15px;height:15px;min-width:15px;border-radius:4px;border:1.5px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;transition:all .15s;flex-shrink:0}
+.mod-block.m1 .sub-item.on .chk{background:var(--blue);border-color:var(--blue)}
+.mod-block.m2 .sub-item.on .chk{background:var(--teal);border-color:var(--teal)}
+.mod-block.m3 .sub-item.on .chk{background:var(--green);border-color:var(--green)}
+.chk svg{width:9px;height:9px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;display:none}
+.sub-item.on .chk svg{display:block}
+.sub-name{font-size:12px;color:var(--muted);flex:1;line-height:1.4}
+.sub-item.on .sub-name{color:var(--black);font-weight:600}
+.sub-days-tag{font-size:10px;color:var(--muted);white-space:nowrap;font-weight:600}
+.mod-block.m1 .sub-item.on .sub-days-tag{color:var(--blue)}
+.mod-block.m2 .sub-item.on .sub-days-tag{color:var(--teal)}
+.mod-block.m3 .sub-item.on .sub-days-tag{color:#44a300}
+/* Notices */
+.notice{border-radius:10px;padding:10px 14px;font-size:13px;line-height:1.6;margin-bottom:1rem;display:none}
+.notice.show{display:block}
+.notice-warn{background:#fff3f0;border:1.5px solid #f5c3b8;color:#b03a1a;font-weight:600}
+.notice-info{background:rgba(255,157,66,.1);border:1.5px solid rgba(255,157,66,.4);color:#c46000}
+/* Pricing reveal */
+.pricing-reveal{display:none}.pricing-reveal.show{display:block}
+/* Price card */
+.price-card{background:var(--navy);border-radius:16px;padding:1.75rem 2rem;color:#fff;margin-bottom:1rem;position:relative;overflow:hidden}
+.price-card::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.04)}
+.price-card::after{content:'';position:absolute;bottom:-60px;left:-30px;width:200px;height:200px;border-radius:50%;background:rgba(43,68,163,.3)}
+.price-card-inner{position:relative;z-index:1}
+.negotiable-tag{display:inline-block;background:var(--orange);color:var(--black);font-family:'League Spartan',sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 12px;border-radius:999px;margin-bottom:.75rem}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:.5rem}
+.price-box .lbl{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.55;margin-bottom:.2rem}
+.price-box .amt{font-family:'League Spartan',sans-serif;font-size:36px;font-weight:800;line-height:1;color:#fff}
+.price-box .sub{font-size:12px;opacity:.5;margin-top:4px}
+.price-divider{width:1px;background:rgba(255,255,255,.12);margin:0 .5rem}
+/* Summary strip */
+.prog-strip{display:flex;flex-wrap:wrap;gap:8px;background:rgba(43,68,163,.06);border:1.5px solid rgba(43,68,163,.14);border-radius:10px;padding:10px 14px;margin-bottom:1rem;font-size:12px;align-items:center}
+.prog-strip-item{display:flex;align-items:center;gap:5px;font-weight:600;color:var(--navy)}
+.prog-strip-item .dot{width:8px;height:8px;border-radius:50%}
+/* Dilution table */
+.dilution-card{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.1rem 1.4rem;margin-bottom:1rem;box-shadow:0 1px 6px rgba(32,49,98,.06)}
+.dilution-lbl{font-size:12px;color:var(--muted);margin-bottom:.75rem;line-height:1.5}
+.dilution-table{width:100%;border-collapse:collapse;font-size:13px}
+.dilution-table th{font-size:11px;font-weight:700;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1.5px solid var(--border);letter-spacing:.04em;text-transform:uppercase}
+.dilution-table th.r{text-align:right}
+.dilution-table td{padding:7px 8px;border-bottom:1px solid var(--mid);color:var(--black);vertical-align:middle}
+.dilution-table td.r{text-align:right;font-weight:600}
+.dilution-table tr:last-child td{border-bottom:none}
+.dilution-table tr.act td{background:rgba(25,162,141,.07);font-weight:700}
+.dilution-table tr.act td.r{color:var(--teal)}
+.saving-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;background:rgba(102,204,0,.12);color:#44a300}
+/* Add-ons */
+.addon-grid{display:grid;gap:10px;margin-bottom:1rem}
+.addon-item{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:all .2s}
+.addon-item.on{border-color:var(--teal);background:rgba(25,162,141,.04)}
+.addon-chk{width:18px;height:18px;min-width:18px;border-radius:5px;border:1.5px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;transition:all .15s;flex-shrink:0;margin-top:1px}
+.addon-item.on .addon-chk{background:var(--teal);border-color:var(--teal)}
+.addon-chk svg{width:10px;height:10px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;display:none}
+.addon-item.on .addon-chk svg{display:block}
+.addon-info{flex:1}
+.addon-name{font-size:13px;font-weight:700;color:var(--navy);line-height:1.4}
+.addon-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
+.addon-tag{display:inline-block;margin-top:5px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 9px;border-radius:999px}
+.tag-teal{background:rgba(25,162,141,.12);color:var(--teal)}
+.tag-blue{background:rgba(43,68,163,.1);color:var(--blue)}
+.tag-green{background:rgba(102,204,0,.12);color:#44a300}
+.tag-orange{background:rgba(255,157,66,.15);color:#b06000}
+.addon-price-box{text-align:right;min-width:110px;flex-shrink:0}
+.addon-price-orig{font-size:12px;font-weight:500;color:var(--muted);display:block;margin-bottom:2px}
+.addon-price-val{font-family:'League Spartan',sans-serif;font-size:19px;font-weight:700;color:var(--navy)}
+.addon-price-val.discounted{color:var(--teal)}
+.addon-price-disc-note{font-size:10px;color:var(--teal);font-weight:600;display:block;margin-top:3px;line-height:1.4}
+/* Upsell banner */
+.upsell-banner{display:none;background:linear-gradient(135deg,rgba(255,157,66,.1),rgba(43,68,163,.06));border:1.5px solid var(--orange);border-radius:10px;padding:12px 16px;font-size:13px;color:var(--black);line-height:1.7;margin-bottom:1rem}
+.upsell-banner.show{display:block}
+/* Grand total */
+.grand-total{background:linear-gradient(135deg,var(--teal) 0%,var(--blue) 100%);border-radius:16px;padding:1.5rem 2rem;color:#fff;margin-bottom:1rem;display:none}
+.grand-total.show{display:block}
+.gt-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.65;margin-bottom:.4rem}
+.gt-amount{font-family:'League Spartan',sans-serif;font-size:42px;font-weight:800;line-height:1}
+.gt-breakdown{font-size:12px;opacity:.6;margin-top:6px;line-height:1.8}
+.gt-savings{display:inline-block;background:rgba(255,255,255,.18);border-radius:8px;padding:6px 14px;font-family:'League Spartan',sans-serif;font-size:15px;font-weight:700;margin-top:.75rem}
+.footer-note{font-size:12px;color:var(--muted);text-align:center;margin-top:2rem;line-height:1.8}
+/* Enquiry form */
+.enquiry-wrap{display:none;margin-top:1rem}
+.enquiry-wrap.show{display:block}
+.enquiry-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(32,49,98,.08)}
+.enquiry-title{font-family:'League Spartan',sans-serif;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:.25rem}
+.enquiry-sub{font-size:12px;color:var(--muted);margin-bottom:1.25rem;line-height:1.5}
+.enquiry-summary{background:var(--mid);border-radius:10px;padding:10px 14px;font-size:12px;color:var(--navy);margin-bottom:1.25rem;line-height:1.8;border:1px solid var(--border)}
+.enquiry-summary strong{color:var(--blue)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-group{display:flex;flex-direction:column;gap:4px}
+.form-group label{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.form-group input,.form-group select{padding:9px 12px;border-radius:8px;border:1.5px solid var(--border);font-family:'Nunito Sans',sans-serif;font-size:13px;color:var(--black);background:#fff;outline:none;transition:border-color .15s}
+.form-group input:focus,.form-group select:focus{border-color:var(--blue)}
+.form-group input::placeholder{color:#b0b8cc}
+.submit-btn{width:100%;padding:13px;border:none;border-radius:10px;background:var(--navy);color:#fff;font-family:'League Spartan',sans-serif;font-size:15px;font-weight:700;letter-spacing:.04em;cursor:pointer;transition:background .15s;margin-top:4px}
+.submit-btn:hover{background:var(--blue)}
+.submit-btn:disabled{opacity:.5;cursor:not-allowed}
+.form-note{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.6}
+.success-msg{display:none;background:rgba(102,204,0,.08);border:1.5px solid rgba(102,204,0,.3);border-radius:12px;padding:1.5rem;text-align:center;margin-top:1rem}
+.success-msg.show{display:block}
+.success-msg .tick{font-size:36px;margin-bottom:.5rem}
+.success-msg h3{font-family:'League Spartan',sans-serif;font-size:18px;font-weight:800;color:#44a300;margin-bottom:.3rem}
+.success-msg p{font-size:13px;color:var(--muted)}
+@media(max-width:600px){
+  .hdr{padding:1rem}.price-grid{grid-template-columns:1fr}.price-divider{display:none}
+  .price-box .amt{font-size:28px}.gt-amount{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div>
+    <div class="hdr-brand">Skill-Uplift Training Programme — Pricing</div>
+    <div class="hdr-sub">Customise your programme &amp; get an instant quote</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- Step 1 -->
+  <div class="sec-label"><span class="step-badge">1</span> Grade &amp; Class</div>
+  <div class="card">
+    <div class="grade-row">
+      <span class="grade-lbl">Grade:</span>
+      <button class="gb" onclick="setGrade(6,this)">Grade 6</button>
+      <button class="gb on" onclick="setGrade(7,this)">Grade 7</button>
+      <button class="gb" onclick="setGrade(8,this)">Grade 8</button>
+      <button class="gb" onclick="setGrade(9,this)">Grade 9</button>
+      <button class="gb" onclick="setGrade(10,this)">Grade 10</button>
+      <button class="gb" onclick="setGrade(11,this)">Grade 11</button>
+    </div>
+    <div class="slider-row">
+      <label>Students per section</label>
+      <input type="range" id="s-stu" min="26" max="45" step="1" value="30" oninput="calc()">
+      <span class="slider-val" id="v-stu">30 students</span>
+    </div>
+    <div class="slider-row">
+      <label>Sections per day (8A, 8B, 8C…)</label>
+      <input type="range" id="s-sec" min="1" max="5" step="1" value="1" oninput="calc()">
+      <span class="slider-val" id="v-sec">1 section/day</span>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="sec-label"><span class="step-badge">2</span> Select Skills &amp; Sub-skills</div>
+
+  <div class="notice notice-warn" id="no-sel">Please select at least two sub-skills to continue.</div>
+
+  <div class="mod-grid">
+    <!-- Module 1 -->
+    <div class="mod-block m1">
+      <div class="mod-hdr">
+        <div class="mod-title">Module 1 · Foundational Skills</div>
+        <span class="mod-days-badge"><span id="m1-days">0</span>d</span>
+      </div>
+      <div class="mod-body">
+        <div class="sel-all-row" onclick="selAll(1)">
+          <div class="chk" id="m1-all-chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          <span>Select all</span>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">1.1 · Self Awareness</div>
+          <div class="sub-item" id="si-1-1-1" onclick="togSub('1-1-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Me as a special person</span><span class="sub-days-tag">1d</span></div>
+          <div class="sub-item" id="si-1-1-2" onclick="togSub('1-1-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Self-control</span><span class="sub-days-tag">1d</span></div>
+          <div class="sub-item" id="si-1-1-3" onclick="togSub('1-1-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">My roles and responsibilities</span><span class="sub-days-tag">1d</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">1.2 · Empathy in Action</div>
+          <div class="sub-item" id="si-1-2-1" onclick="togSub('1-2-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Understand &amp; appreciate differences</span><span class="sub-days-tag">1d</span></div>
+          <div class="sub-item" id="si-1-2-2" onclick="togSub('1-2-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Prejudice vs Discrimination vs Stereotype</span><span class="sub-days-tag">1d</span></div>
+          <div class="sub-item" id="si-1-2-3" onclick="togSub('1-2-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Caring for people</span><span class="sub-days-tag">1d</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Module 2 -->
+    <div class="mod-block m2">
+      <div class="mod-hdr">
+        <div class="mod-title">Module 2 · Social Skills</div>
+        <span class="mod-days-badge"><span id="m2-days">0</span>d</span>
+      </div>
+      <div class="mod-body">
+        <div class="sel-all-row" onclick="selAll(2)">
+          <div class="chk" id="m2-all-chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          <span>Select all</span>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">2.1 · Interpersonal Skills</div>
+          <div class="sub-item" id="si-2-1-1" onclick="togSub('2-1-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Value relationships, family and friends</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-2-1-2" onclick="togSub('2-1-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Forming new relations, surviving loss</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-2-1-3" onclick="togSub('2-1-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Seeking support and advice from others</span><span class="sub-days-tag">2d</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">2.2 · Communication Skills</div>
+          <div class="sub-item" id="si-2-2-1" onclick="togSub('2-2-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Verbal and non-verbal skills</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-2-2-2" onclick="togSub('2-2-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Assertive communication</span><span class="sub-days-tag">3d</span></div>
+          <div class="sub-item" id="si-2-2-3" onclick="togSub('2-2-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Assertiveness to resist peer pressure</span><span class="sub-days-tag">2d</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Module 3 -->
+    <div class="mod-block m3">
+      <div class="mod-hdr">
+        <div class="mod-title">Module 3 · Emotional Skills</div>
+        <span class="mod-days-badge"><span id="m3-days">0</span>d</span>
+      </div>
+      <div class="mod-body">
+        <div class="sel-all-row" onclick="selAll(3)">
+          <div class="chk" id="m3-all-chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          <span>Select all</span>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">3.1 · Coping with Emotions</div>
+          <div class="sub-item" id="si-3-1-1" onclick="togSub('3-1-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Recognize emotions</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-3-1-2" onclick="togSub('3-1-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">How emotions impact our actions</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-3-1-3" onclick="togSub('3-1-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Coping with emotional distress</span><span class="sub-days-tag">2d</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-lbl">3.2 · Coping with Stress</div>
+          <div class="sub-item" id="si-3-2-1" onclick="togSub('3-2-1')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Identify source of stress</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-3-2-2" onclick="togSub('3-2-2')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Methods for coping with stress</span><span class="sub-days-tag">2d</span></div>
+          <div class="sub-item" id="si-3-2-3" onclick="togSub('3-2-3')"><div class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="sub-name">Dealing with adversity</span><span class="sub-days-tag">2d</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice notice-info" id="min-notice">
+    ⚠️ <strong>Minimum 4 session days required.</strong> Fewer than 4 days does not provide enough time for meaningful SEL impact. Please select additional sub-skills to continue.
+  </div>
+
+  <!-- Pricing Reveal -->
+  <div class="pricing-reveal" id="pricing-reveal">
+
+    <div class="prog-strip" id="prog-strip"></div>
+
+    <!-- Step 3: Price -->
+    <div class="sec-label"><span class="step-badge">3</span> Programme Price</div>
+    <div class="price-card">
+      <div class="price-card-inner">
+        <span class="negotiable-tag">Negotiable</span>
+        <div style="font-size:13px;opacity:.55;font-weight:600;margin-bottom:.5rem" id="price-desc">—</div>
+        <div class="price-grid">
+          <div class="price-box">
+            <div class="lbl">Total programme fee</div>
+            <div class="amt" id="price-total">—</div>
+            <div class="sub" id="price-sub">—</div>
+          </div>
+          <div class="price-divider"></div>
+          <div class="price-box">
+            <div class="lbl">Per student</div>
+            <div class="amt" id="price-per-stu">—</div>
+            <div class="sub" id="price-per-sub">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cost dilution -->
+    <div class="sec-label"><span class="step-badge" style="font-size:10px;width:20px;height:20px">↓</span> More sections = lower cost per student</div>
+    <div class="dilution-card">
+      <div class="dilution-lbl">If your school runs the same programme across multiple sections on the same day, the cost per student reduces significantly. Your current selection is highlighted.</div>
+      <table class="dilution-table">
+        <thead><tr>
+          <th>Sections / day</th><th>Total students</th>
+          <th class="r">Quote per student</th><th class="r">Saving vs 1 section</th>
+        </tr></thead>
+        <tbody id="dilution-body"></tbody>
+      </table>
+    </div>
+
+    <!-- Step 4: Add-ons -->
+    <div class="sec-label"><span class="step-badge">4</span> Optional Add-ons</div>
+
+    <div class="addon-grid">
+
+      <div class="addon-item" id="ai-need" onclick="togAddon('need')">
+        <div class="addon-chk" id="chk-need"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        <div class="addon-info">
+          <div class="addon-name">Need Analysis &amp; Customisation</div>
+          <div class="addon-desc">School and student study to identify specific SEL needs — programme fully customised to findings for maximum impact.</div>
+          <span class="addon-tag tag-blue">Strongest for impact</span>
+        </div>
+        <div class="addon-price-box">
+          <span class="addon-price-val">₹10,000</span>
+        </div>
+      </div>
+
+      <div class="addon-item" id="ai-parent" onclick="togAddon('parent')">
+        <div class="addon-chk" id="chk-parent"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        <div class="addon-info">
+          <div class="addon-name">Parent / Active Parents Workshops</div>
+          <div class="addon-desc">1–2 facilitated sessions to align parents with SEL programme goals and reinforce learning at home.</div>
+          <span class="addon-tag tag-blue">Highly recommended</span>
+        </div>
+        <div class="addon-price-box">
+          <span class="addon-price-val">₹8,000</span>
+        </div>
+      </div>
+
+      <!-- BridgeCare -->
+      <div class="addon-item" id="ai-bridge" onclick="togAddon('bridge')">
+        <div class="addon-chk" id="chk-bridge"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        <div class="addon-info">
+          <div class="addon-name">BridgeCare — Teacher Training</div>
+          <div class="addon-desc">Equips teachers with a psycho-educational framework to support student wellness while maintaining professional care boundaries.</div>
+          <span class="addon-tag" id="bridge-tag">Add to your plan to unlock a special discount</span>
+        </div>
+        <div class="addon-price-box">
+          <span class="addon-price-orig">₹35,000</span>
+          <span class="addon-price-val" id="p-bridge">₹35,000</span>
+          <span class="addon-price-disc-note" id="p-bridge-note"></span>
+        </div>
+      </div>
+
+      <!-- Safe-Passage -->
+      <div class="addon-item" id="ai-safe" onclick="togAddon('safe')">
+        <div class="addon-chk" id="chk-safe"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+        <div class="addon-info">
+          <div class="addon-name">The Safe-Passage Directors</div>
+          <div class="addon-desc">Elite, high-intensity training for school leadership — equipping non-teaching staff with specialised skills to manage high-stakes mental health situations.</div>
+          <span class="addon-tag" id="safe-tag">Add to your plan to unlock a special discount</span>
+        </div>
+        <div class="addon-price-box">
+          <span class="addon-price-orig">₹40,000</span>
+          <span class="addon-price-val" id="p-safe">₹40,000</span>
+          <span class="addon-price-disc-note" id="p-safe-note"></span>
+        </div>
+      </div>
+
+    </div><!-- end addon-grid -->
+
+    <!-- Upsell banner -->
+    <div class="upsell-banner" id="upsell-banner">
+      <strong>🎯 <span id="upsell-text"></span></strong>
+    </div>
+
+    <!-- Grand total -->
+    <div class="grand-total" id="grand-total">
+      <div class="gt-label">Grand Total (Programme + Add-ons) · Negotiable</div>
+      <div class="gt-amount" id="gt-amount">—</div>
+      <div class="gt-savings" id="gt-savings" style="display:none"></div>
+      <div class="gt-breakdown" id="gt-breakdown">—</div>
+    </div>
+
+    <!-- Enquiry form — appears when any add-on is selected -->
+    <div class="enquiry-wrap" id="enquiry-wrap">
+      <div class="sec-label"><span class="step-badge">5</span> Request this Quote</div>
+      <div class="enquiry-card">
+        <div class="enquiry-title">Send us your selection</div>
+        <div class="enquiry-sub">We'll get back to you within 24 hours to discuss the programme and finalise the quote.</div>
+        <div class="enquiry-summary" id="enquiry-summary">—</div>
+
+        <form id="enquiry-form">
+          <!-- Hidden fields — auto-filled by JS, submitted to HubSpot via API -->
+          <input type="hidden" id="f-bundle">
+          <input type="hidden" id="f-total">
+          <input type="hidden" id="f-prog">
+          <input type="hidden" id="f-subs">
+          <input type="hidden" id="f-days">
+          <input type="hidden" id="f-stus">
+          <input type="hidden" id="f-grade">
+          <input type="hidden" id="f-addons">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>School Name *</label>
+              <input type="text" id="fi-school" placeholder="e.g. Delhi Public School" required>
+            </div>
+            <div class="form-group">
+              <label>City *</label>
+              <input type="text" id="fi-city" placeholder="e.g. Mumbai" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" id="fi-firstname" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" id="fi-lastname" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Designation</label>
+              <input type="text" id="fi-desig" placeholder="e.g. Vice Principal">
+            </div>
+            <div class="form-group">
+              <label>Academic Year Target</label>
+              <select id="fi-year">
+                <option value="">Select year</option>
+                <option value="2025-26">2025 – 26</option>
+                <option value="2026-27">2026 – 27</option>
+                <option value="2027-28">2027 – 28</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="fi-email" placeholder="school@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp *</label>
+              <input type="tel" id="fi-phone" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submit-btn">Send Enquiry →</button>
+          <p class="form-note">📞 We'll call you between <strong>8AM – 12PM</strong> on a school working day &nbsp;·&nbsp; 🔒 Your details are only used to follow up on this quote</p>
+        </form>
+
+        <!-- Success message -->
+        <div class="success-msg" id="success-msg">
+          <div class="tick">🎉</div>
+          <h3>Enquiry Sent!</h3>
+          <p>Thank you. We'll be in touch within 24 hours to discuss your SEL programme.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end pricing-reveal -->
+
+  <div class="footer-note">
+    All figures in INR &nbsp;·&nbsp; Prices are indicative and open to discussion &nbsp;·&nbsp; Final quote issued post consultation
+  </div>
+
+</div>
+
+<script>
+const SUBS = {
+  '1-1-1':{mod:1,days:1},'1-1-2':{mod:1,days:1},'1-1-3':{mod:1,days:1},
+  '1-2-1':{mod:1,days:1},'1-2-2':{mod:1,days:1},'1-2-3':{mod:1,days:1},
+  '2-1-1':{mod:2,days:2},'2-1-2':{mod:2,days:2},'2-1-3':{mod:2,days:2},
+  '2-2-1':{mod:2,days:2},'2-2-2':{mod:2,days:3},'2-2-3':{mod:2,days:2},
+  '3-1-1':{mod:3,days:2},'3-1-2':{mod:3,days:2},'3-1-3':{mod:3,days:2},
+  '3-2-1':{mod:3,days:2},'3-2-2':{mod:3,days:2},'3-2-3':{mod:3,days:2}
+};
+const MIN_DAYS=4, MIN_SUBS=2;
+const DT=500,SNR=2000,TRN_PM=35000,COFAC_PM=4000,WSR=40,FTRV=7200;
+const BC_SA=35000, SP_SA=40000;
+const MARGIN=0.21;
+// Discount rules:
+// Single (bridge or safe): listPrice - floor(BD/2) - 8000
+// Both selected:           each gets above PLUS an additional 4500 (= 9000 / 2 per item)
+// Total saved shown in grand total = sum of all discounts from list prices
+
+let grade=7;
+const SEL={};
+Object.keys(SUBS).forEach(k=>SEL[k]=false);
+const AS={need:false,parent:false,bridge:false,safe:false};
+
+const inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+const calNights=d=>Math.ceil(d/5*7);
+const calMonths=d=>Math.ceil(calNights(d)/30);
+const getSelDays=()=>Object.keys(SEL).filter(k=>SEL[k]).reduce((s,k)=>s+SUBS[k].days,0);
+const getSelSubs=()=>Object.keys(SEL).filter(k=>SEL[k]).length;
+const getModDays=m=>Object.keys(SEL).filter(k=>SEL[k]&&SUBS[k].mod===m).reduce((s,k)=>s+SUBS[k].days,0);
+
+function costs(stu,days,subs,sec){
+  const stus=stu*sec, nights=calNights(days), months=calMonths(days);
+  const dir=TRN_PM*months+COFAC_PM*months+FTRV+WSR*stus*subs+DT*days+SNR*nights;
+  const bd=Math.round(dir*0.10);
+  return {stus,subs,fin:dir+bd,bd};
+}
+
+function qAt21(fin,stus,subs){
+  const rate=Math.ceil((fin/(1-MARGIN))/stus/subs/10)*10;
+  return {rate, quote:rate*stus*subs};
+}
+
+// Computes discounted prices for BridgeCare and Safe-Passage
+// Discount per item (single or both) = floor(BD/2) + 8000
+function bundlePrices(bd, bridgeOn, safeOn){
+  const halfBD = Math.floor(bd/2);
+  const flat   = 8000;
+
+  let bcPrice=BC_SA, spPrice=SP_SA;
+  let bcDisc=0, spDisc=0;
+
+  if(bridgeOn){ bcDisc = halfBD + flat; bcPrice = BC_SA - bcDisc; }
+  if(safeOn)  { spDisc = halfBD + flat; spPrice = SP_SA - spDisc; }
+
+  return {bcPrice, spPrice, bcDisc, spDisc, totalSaved: bcDisc+spDisc, halfBD, flat};
+}
+
+function togSub(id){
+  SEL[id]=!SEL[id];
+  document.getElementById('si-'+id).classList.toggle('on',SEL[id]);
+  updateModHeaders(); calc();
+}
+function selAll(mod){
+  const keys=Object.keys(SUBS).filter(k=>SUBS[k].mod===mod);
+  const allOn=keys.every(k=>SEL[k]);
+  keys.forEach(k=>{SEL[k]=!allOn;document.getElementById('si-'+k).classList.toggle('on',SEL[k]);});
+  updateModHeaders(); calc();
+}
+function updateModHeaders(){
+  [1,2,3].forEach(m=>{
+    const keys=Object.keys(SUBS).filter(k=>SUBS[k].mod===m);
+    document.getElementById('m'+m+'-days').textContent=getModDays(m);
+    const allOn=keys.every(k=>SEL[k]), anyOn=keys.some(k=>SEL[k]);
+    const chk=document.getElementById('m'+m+'-all-chk');
+    chk.innerHTML=allOn?'<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>':'';
+    chk.style.background=allOn?(m===1?'var(--blue)':m===2?'var(--teal)':'var(--green)'):(anyOn?'rgba(43,68,163,.15)':'#fff');
+    chk.style.borderColor=allOn?(m===1?'var(--blue)':m===2?'var(--teal)':'var(--green)'):'var(--border)';
+  });
+}
+function setGrade(g,el){grade=g;document.querySelectorAll('.gb').forEach(b=>b.classList.remove('on'));el.classList.add('on');}
+function togAddon(k){
+  AS[k]=!AS[k];
+  const el=document.getElementById('ai-'+k), chk=document.getElementById('chk-'+k);
+  el.classList.toggle('on',AS[k]);
+  chk.innerHTML=AS[k]?'<svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>':'';
+  calc();
+}
+
+function calc(){
+  const stu=parseInt(document.getElementById('s-stu').value);
+  const sec=parseInt(document.getElementById('s-sec').value);
+  document.getElementById('v-stu').textContent=stu+' student'+(stu>1?'s':'');
+  document.getElementById('v-sec').textContent=sec+' section'+(sec>1?'s':'')+'/day';
+
+  const days=getSelDays(), subs=getSelSubs();
+  const noSel=document.getElementById('no-sel');
+  const minNotice=document.getElementById('min-notice');
+  const reveal=document.getElementById('pricing-reveal');
+
+  if(subs<MIN_SUBS){noSel.classList.add('show');minNotice.classList.remove('show');reveal.classList.remove('show');return;}
+  noSel.classList.remove('show');
+  if(days<MIN_DAYS){minNotice.classList.add('show');reveal.classList.remove('show');return;}
+  minNotice.classList.remove('show');
+  reveal.classList.add('show');
+
+  const r=costs(stu,days,subs,sec);
+  const q=qAt21(r.fin,r.stus,r.subs);
+  const bp=bundlePrices(r.bd, AS.bridge, AS.safe);
+
+  // Summary strip
+  const m1d=getModDays(1),m2d=getModDays(2),m3d=getModDays(3);
+  const m1s=Object.keys(SEL).filter(k=>SEL[k]&&SUBS[k].mod===1).length;
+  const m2s=Object.keys(SEL).filter(k=>SEL[k]&&SUBS[k].mod===2).length;
+  const m3s=Object.keys(SEL).filter(k=>SEL[k]&&SUBS[k].mod===3).length;
+  let sp=[];
+  if(m1s>0)sp.push(`<span class="prog-strip-item"><span class="dot" style="background:var(--blue)"></span><span style="color:var(--blue)">${m1s} sub-skills · ${m1d} days</span></span>`);
+  if(m2s>0)sp.push(`<span class="prog-strip-item"><span class="dot" style="background:var(--teal)"></span><span style="color:var(--teal)">${m2s} sub-skills · ${m2d} days</span></span>`);
+  if(m3s>0)sp.push(`<span class="prog-strip-item"><span class="dot" style="background:#44a300"></span><span style="color:#44a300">${m3s} sub-skills · ${m3d} days</span></span>`);
+  sp.push(`<span class="prog-strip-item" style="margin-left:auto"><strong>${subs} sub-skills &nbsp;·&nbsp; ${days} session days &nbsp;·&nbsp; ${r.stus} students</strong></span>`);
+  document.getElementById('prog-strip').innerHTML=sp.join('<span style="color:var(--border);margin:0 2px">·</span>');
+
+  // Price card
+  document.getElementById('price-total').textContent=inr(q.quote);
+  document.getElementById('price-per-stu').textContent=inr(Math.round(q.quote/r.stus));
+  document.getElementById('price-desc').textContent=subs+' sub-skills · '+days+' session days · '+r.stus+' students';
+  document.getElementById('price-sub').textContent=inr(q.rate)+' per sub-skill per student';
+  document.getElementById('price-per-sub').textContent='across '+r.stus+' students';
+
+  // Dilution table
+  let base1cps=null, rows='';
+  for(let s=1;s<=5;s++){
+    const cr=costs(stu,days,subs,s), cq=qAt21(cr.fin,cr.stus,cr.subs);
+    const cps=Math.round(cq.quote/cr.stus);
+    if(s===1)base1cps=cps;
+    const savPct=s>1?Math.round((base1cps-cps)/base1cps*100):0;
+    const act=s===sec;
+    rows+=`<tr class="${act?'act':''}">
+      <td>${s} section${s>1?'s':''}${act?' <strong style="color:var(--teal)">◀ current</strong>':''}</td>
+      <td>${cr.stus}</td>
+      <td class="r">${inr(cps)}</td>
+      <td class="r">${s>1?'<span class="saving-pill">−'+savPct+'%</span>':'—'}</td>
+    </tr>`;
+  }
+  document.getElementById('dilution-body').innerHTML=rows;
+
+  // ── BridgeCare display ───────────────────────────────────
+  const pBridgeEl   = document.getElementById('p-bridge');
+  const bridgeTagEl = document.getElementById('bridge-tag');
+  if(AS.bridge){
+    pBridgeEl.textContent = inr(bp.bcPrice);
+    pBridgeEl.className   = 'addon-price-val discounted';
+    bridgeTagEl.textContent = 'Bundle discount applied ✓';
+    bridgeTagEl.className   = 'addon-tag tag-green';
+  } else {
+    pBridgeEl.textContent = '₹35,000';
+    pBridgeEl.className   = 'addon-price-val';
+    if(AS.safe){
+      bridgeTagEl.textContent = '🎯 Add now for Elite Savings';
+      bridgeTagEl.className   = 'addon-tag tag-orange';
+    } else {
+      bridgeTagEl.textContent = 'Add to your plan to unlock a special discount';
+      bridgeTagEl.className   = 'addon-tag tag-teal';
+    }
+  }
+
+  // ── Safe-Passage display ─────────────────────────────────
+  const pSafeEl   = document.getElementById('p-safe');
+  const safeTagEl = document.getElementById('safe-tag');
+  if(AS.safe){
+    pSafeEl.textContent = inr(bp.spPrice);
+    pSafeEl.className   = 'addon-price-val discounted';
+    safeTagEl.textContent = 'Bundle discount applied ✓';
+    safeTagEl.className   = 'addon-tag tag-green';
+  } else {
+    pSafeEl.textContent = '₹40,000';
+    pSafeEl.className   = 'addon-price-val';
+    if(AS.bridge){
+      safeTagEl.textContent = '🎯 Add now for Elite Savings';
+      safeTagEl.className   = 'addon-tag tag-orange';
+    } else {
+      safeTagEl.textContent = 'Add to your plan to unlock a special discount';
+      safeTagEl.className   = 'addon-tag tag-teal';
+    }
+  }
+
+  // ── Upsell banner (one of bridge/safe selected but not both) ──
+  const upsellBanner = document.getElementById('upsell-banner');
+  const upsellText   = document.getElementById('upsell-text');
+  if(AS.bridge && !AS.safe){
+    upsellBanner.classList.add('show');
+    upsellText.textContent = 'Save more — add The Safe-Passage Directors for Elite Savings!';
+  } else if(AS.safe && !AS.bridge){
+    upsellBanner.classList.add('show');
+    upsellText.textContent = 'Save more — add BridgeCare Teacher Training for Elite Savings!';
+  } else {
+    upsellBanner.classList.remove('show');
+  }
+
+  // ── Grand total ──────────────────────────────────────────
+  const needAmt   = AS.need   ? 10000 : 0;
+  const parentAmt = AS.parent ? 8000  : 0;
+  const bridgeAmt = AS.bridge ? bp.bcPrice : 0;
+  const safeAmt   = AS.safe   ? bp.spPrice : 0;
+  const addonTot  = needAmt+parentAmt+bridgeAmt+safeAmt;
+
+  const gtBox      = document.getElementById('grand-total');
+  const enquiryWrap= document.getElementById('enquiry-wrap');
+
+  if(addonTot>0){
+    const grand=q.quote+addonTot;
+    gtBox.classList.add('show');
+    document.getElementById('gt-amount').textContent=inr(grand);
+    const parts=[
+      'Programme: '+inr(q.quote),
+      ...(AS.need   ?['Need Analysis: ₹10,000']       :[]),
+      ...(AS.parent ?['Parent Workshops: ₹8,000']      :[]),
+      ...(AS.bridge ?['BridgeCare: '+inr(bp.bcPrice)]  :[]),
+      ...(AS.safe   ?['Safe-Passage: '+inr(bp.spPrice)]:[]),
+    ];
+    document.getElementById('gt-breakdown').textContent=parts.join(' + ');
+    const savingsEl=document.getElementById('gt-savings');
+    if(bp.totalSaved>0){
+      savingsEl.style.display='inline-block';
+      savingsEl.textContent='🎉 You saved '+inr(bp.totalSaved)+' on training add-ons';
+    } else {
+      savingsEl.style.display='none';
+    }
+
+    // ── Populate hidden form fields & enquiry summary ────
+    const bundleList=[
+      ...(AS.bridge ?['BridgeCare Teacher Training']  :[]),
+      ...(AS.safe   ?['Safe-Passage Directors']        :[]),
+      ...(AS.need   ?['Need Analysis & Customisation'] :[]),
+      ...(AS.parent ?['Parent Workshops']              :[]),
+    ].join(', ');
+
+    document.getElementById('f-bundle').value  = bundleList;
+    document.getElementById('f-total').value   = inr(grand);
+    document.getElementById('f-prog').value    = inr(q.quote);
+    document.getElementById('f-subs').value    = subs;
+    document.getElementById('f-days').value    = days;
+    document.getElementById('f-stus').value    = r.stus;
+    document.getElementById('f-grade').value   = 'Grade '+grade;
+    document.getElementById('f-addons').value  = parts.slice(1).join(' + ') || 'None';
+
+    document.getElementById('enquiry-summary').innerHTML =
+      '<strong>Selected:</strong> '+bundleList+'<br>'+
+      '<strong>Programme:</strong> Grade '+grade+' · '+subs+' sub-skills · '+days+' session days · '+r.stus+' students<br>'+
+      '<strong>Grand Total:</strong> '+inr(grand)+(bp.totalSaved>0?' (saved '+inr(bp.totalSaved)+')':'');
+
+    enquiryWrap.classList.add('show');
+  } else {
+    gtBox.classList.remove('show');
+    enquiryWrap.classList.remove('show');
+  }
+}
+
+// ── HubSpot Form Submission ────────────────────────────────
+// Replace these two values with your actual HubSpot IDs before uploading
+// Portal ID : HubSpot → top-right avatar → Account & Billing → Account ID
+// Form GUID : HubSpot → Marketing → Forms → your form → Actions → Share → Embed code
+const HS_PORTAL_ID = '242303447';
+const HS_FORM_GUID = 'x56d6cbc-8241-4bfb-adf6-1221e4762e3c';
+
+document.getElementById('enquiry-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  const fields = [
+    // Visible fields
+    { name: 'school',           value: document.getElementById('fi-school').value.trim() },
+    { name: 'city',             value: document.getElementById('fi-city').value.trim() },
+    { name: 'firstname',        value: document.getElementById('fi-firstname').value.trim() },
+    { name: 'lastname',         value: document.getElementById('fi-lastname').value.trim() },
+    { name: 'designation',      value: document.getElementById('fi-desig').value.trim() },
+    { name: 'target_year',      value: document.getElementById('fi-year').value },
+    { name: 'email',            value: document.getElementById('fi-email').value.trim() },
+    { name: 'phone',            value: document.getElementById('fi-phone').value.trim() },
+    // Hidden fields — auto-populated by the pricing calculator
+    { name: 'grade',            value: document.getElementById('f-grade').value },
+    { name: 'bundle_selected',  value: document.getElementById('f-bundle').value },
+    { name: 'grand_total',      value: document.getElementById('f-total').value },
+    { name: 'programme_fee',    value: document.getElementById('f-prog').value },
+    { name: 'sub_skills_count', value: document.getElementById('f-subs').value },
+    { name: 'session_days',     value: document.getElementById('f-days').value },
+    { name: 'total_students',   value: document.getElementById('f-stus').value },
+    { name: 'addons_detail',    value: document.getElementById('f-addons').value },
+  ];
+
+  const payload = {
+    fields:  fields,
+    context: { pageUri: window.location.href, pageName: document.title }
+  };
+
+  const endpoint = 'https://api.hsforms.com/submissions/v3/integration/submit/'
+                 + HS_PORTAL_ID + '/' + HS_FORM_GUID;
+
+  fetch(endpoint, {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body:    JSON.stringify(payload)
+  })
+  .then(res => {
+    if(!res.ok) throw new Error();
+    document.getElementById('enquiry-form').style.display = 'none';
+    document.getElementById('success-msg').classList.add('show');
+  })
+  .catch(() => {
+    btn.disabled = false;
+    btn.textContent = 'Send Enquiry →';
+    alert('Something went wrong. Please try again or call us directly.');
+  });
+});
+
+calc();
+</script>
+</body>
+</html>
